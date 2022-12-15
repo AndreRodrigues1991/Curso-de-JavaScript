@@ -27,14 +27,12 @@
     <p>Ja me livrei da maldição!</p> 
 
     <script>       
-       var nome = prompt('Qual é seu nome?') /**/
-       alert('É um grande prazer em te conhecer, ' + nome) //+ concatenação / vai aparecer um alerta com essa mensagem + o nome digitado no prompt
-
-       var nome = prompt('Qual é sua profissão?')
-       alert('Sou Desenvolvedor, ' + nome)
-
-       var nome = prompt('Qual sua idade?')
-       alert('Sou maior de idade, tenho ' + nome + '!')
+       var n1 = Number.parseInt(prompt('Digite um Número!')) //a minha variável n1 vai receber o que vier do promt da janela convertido para um numero inteiro
+       var n2 = Number.parseInt(prompt('Digite outro número'))
+       var s = n1 + n2
+       alert('A soma dos valores é ' + s) // o + tem efeito de concatenação e tem o efeito de adição ... nesse caso caltenou (juntou um numero no outro invés de somar os dois numeros do n1 + n2)não somou
+       //(number + number) para adição
+       //(string + string) para concatenação mas o prompt recebe como string mesmo digitando um numero
     </script>
 </body>
 </html>
