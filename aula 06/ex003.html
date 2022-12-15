@@ -27,12 +27,14 @@
     <p>Ja me livrei da maldição!</p> 
 
     <script>       
-       var n1 = Number.parseInt(prompt('Digite um Número!')) //a minha variável n1 vai receber o que vier do promt da janela convertido para um numero inteiro
+       var n1 = Number.parseInt(prompt('Digite um Número!')) //a minha variável n1 vai receber o que vier do promt da janela convertido para um numero inteiro se quiser 1 numero quebrado devemos colocar parsefloat
        var n2 = Number.parseInt(prompt('Digite outro número'))
        var s = n1 + n2
        alert('A soma dos valores é ' + s) // o + tem efeito de concatenação e tem o efeito de adição ... nesse caso caltenou (juntou um numero no outro invés de somar os dois numeros do n1 + n2)não somou
        //(number + number) para adição
        //(string + string) para concatenação mas o prompt recebe como string mesmo digitando um numero
+
+       alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) //A soma entre n1 e n2 é igual a s tamplate strings
     </script>
 </body>
 </html>
@@ -81,4 +83,12 @@ undefined
 object /array vetores
 function-->
 
-<!-- // usada em JS   /**/ usada em CSS  <!----> usada em html-->
+<!-- // usada em JS   /**/ usada em CSS   usada em html-->
+
+<!--no novo JS eu posso usar so o number ao inves de parseint e parseflout o navegadr vai se virar eu tenho q usar apenas quando for um específico -->
+
+<!-- ´ ` duas crazes template string versão atual de JS éu estou aprendendo js`${S}-->
+
+<!--'O aluno ' + nome ' + ' com' + idade + ' anos tirou a nota ' + nota   Concatenação-->
+
+<!--`O aluno ${nome} com ${idade} anos tirou a nota ${nota}`  template String mais facil novidade das ultimas versões da acmescript-->
