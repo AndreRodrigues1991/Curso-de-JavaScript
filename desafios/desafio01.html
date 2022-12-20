@@ -18,16 +18,19 @@
     </style>
 </head>
 <body>
-    <h1>Desafio das Mensagens</h1>
-    <button onclick="botao" id="primeiro" class="botao" >Botão 1</button >
+    <h1 id="texto1">Desafio das Mensagens</h1>
+    <button onclick="mostrarNome()" id="primeiro" class="botao" >Botão 1</button >
     <button class="botao">Botão 2</button> 
     <button class="botao">Botão 3</button>
-    <input type="button" value="Botão 1">
+    
     
 
     
    <script>
-    var button = alert('Você clicou no primeiro botão' + button)
+    var texto = document.getElementById("texto1").innerText;
+    function mostrarNome(e){
+         console.log(e);   
+    } // pegou um elemento pelo id (texto 1 ) . texto que está dentro e deu um  alerta no texto
    </script> 
 </body>
 
