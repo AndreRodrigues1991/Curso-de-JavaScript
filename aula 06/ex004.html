@@ -32,7 +32,7 @@
     <!--Operadores
     aritméticos + - * / % ** operadores para cálculos
     atriuição
-    relacionais
+    relacionais  >maior  <menor  >=maior ou igual  <=menor ou igual  ==igual  !=diferente    identidade === idêntico
     lógicos
     ternário-->
 
@@ -71,3 +71,64 @@
       var x = 5 
       x = x + 1  simplificar  x += 1   x++ mais simplificado
       x = x - 1  simplificar  x -= 1   x--  mais simplificado-->    
+
+     <!--Operadores Relacionais
+      5 > 2    5 é maior que 2?  true  valor verdadeiro 
+      7 < 4    7 é menor que 4? false valor falso
+      8 <= 8   8 é maior ou igual a 8? true valor verdadeiro
+      9 <= 7   9 é menor ou igual a 7? false valor falso 
+      5 == 5   5 é igual 5? true valor falso
+      4 != 4   4 é diferente de 4? false valor falso-->
+
+      <!--Exemplos de quando usar operadores relacionais
+      preço >= 200.50 O preço é maior ou igual a 200.50?
+      idade < 18  A idade é menor do que 18?
+      curso ** 'JavaScript'  O curso é JavaScript?
+      n1 != n2  O primeiro número é diferente do segundo?--> 
+
+     <!--Operadores de Identidade
+      5 == 5   5 é igual a 5? true valor verdadeiro
+      5 == '5' esse 5 é igual ao outro 5? true
+      5 === '5'  identidade ou operador de igualdade restrita os dois 5 são identicos? (mesmo valor e mesmo tipo?) 5 identico a 5? falso
+      5 === 5   5 é idêntico a 5?  true valor verdadeiro-->
+
+     <!--Operadores Lógicos
+        !  negação true ou false
+
+        && conjunção operador binarios 1 de cada lado
+        true && true  verdeiro e verdadeiro true 
+        true && false false falso
+        false && true false falso
+        false && false false falso 
+
+        || paipes disjunção  na dijunção basta que um deles seja verdadeiro pro resultado ser verdadeiro
+        true || true  true veradeiro
+        true || false true verdadeiro
+        false || true true verdedeiro
+        false || false false falso--> 
+
+        <!--  a > b && b % 2 == 0   a maior que b e b por cento é igual a 0 ? *quando eu tenho Operadores relacionais, aritméticos e lógicos na mesma expressão  primeiro vou fazer todos os operadores aritméticos b%2 dpois os peradores relacionais a > b  2 == 0 e dpois vou fazer os operadores lógicos &&  exemplo b divido por 2 da 4 da resto 0  -->
+
+        <!--Exemplos 
+         idade >= 15 && idade <= 17  A idade está entre 15 e 17??
+         
+         estado == 'RJ' || estado == 'SP'  O estado é RJ ou SP?
+        
+         salário > 1500 && sexo != 'M'  eu quero saber é uma mulher que ganha mais de 1500??   O salário é acima de 1500 e não é homem?-->
+
+     <!--Precedência 
+      ()  **  / ... aritméticos
+      >   <   >= ... relacionais
+      ! lógicos primeiro
+      &&  segundo
+      ||  terceiro -->
+
+     <!--Operador Ternário
+     ? : dentro da mesma expressão junta 3 operando
+     teste ? true : false
+     média >= 7.0 ? "Aprovado" : "Reprovado"
+    exemplo var media = 5.5
+            media > 7?'Aprovado':'Reprovado' media é maior que 7? se for vai mostrar na tela aprovado se não vai mostrar reprovado 'Aprovado':'Reprovado' -->  
+     <!--exemplo 
+         var idade = 19
+         var r = idade >= 18 ? 'Maior' : 'Menor' a minha variavel r vai receber o maior ou menor se a minha idade que é 19 for maior ou igual a 18   r   maior-->        
