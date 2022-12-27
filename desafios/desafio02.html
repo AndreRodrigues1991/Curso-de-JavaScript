@@ -23,7 +23,9 @@
 </head>
 <body>
     <h1>Boas-Vindas</h1>
-    <p><button onclick="onClickInicieODesafio()">Inicie o Desafio</button></p>
+    <p><button onclick="onClickInicieODesafio()">Inicie o Desafio 1</button></p>
+
+    <p><button onclick="onClickdesafio2()">Inicie o Desafio 2</button></p>
     
 <script>
     // var nome = prompt('Qual é seu nome ') + prompt('olá')
@@ -40,6 +42,12 @@
         // console.log(nome +  idade) 
 
         alert('Acabei de conhecer o '+ nome +', que tem '+ idade +' anos de idade')
+    }
+
+    function onClickdesafio2(){
+        var nome = prompt('Como você se chama?')
+
+        var idade = prompt("Olá "  + nome + " Qual é sua idade?")
     }
 </script>    
 </body>
