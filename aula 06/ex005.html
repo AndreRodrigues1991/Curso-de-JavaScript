@@ -17,10 +17,30 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div> <!--pode ser por Name ou ID-->
     
     <script>
-        window.document.write()
+        var corpo = window.document.body 
+
+        var p1 = window.document.getElementsByTagName('p')[0] //primeiro parágrafo ´´e 0 o segundo é 1 etc 
+
+        var d = window.document.getElementById('msg') /*por id*/
+
+        var d = window.document.querySelector('div#msg') /*peguei o ID pelo CSS # em html é ID*/
+
+        window.document.write('Está escrito assim: ' + p1.innerText) //está me mostrando o texto que está dentro do meu primeiro parágrafo
+
+        corpo.style.backgroundColor = 'green'
+
+        p1.style.color = 'blue'
+
+        window.alert(p1.innerHTML) // vai mostrar a configuração do html 
+
+        d.style.backgroundColor = 'red' //peguei o ID
+
+        d.innerText = 'Modifiquei o texto atual por DOM em JS'
+
+        d.style.color = 'yellow'
 
     </script>
 </body>
@@ -29,3 +49,13 @@
 <!--DOM = Document Object Model = modelo de objetos para documentos = é um conjuntos de objetos dentro do seu navegador que vai dar acesso aos componentes internos do seu website-->
 
 <!--Arvore DOM-->
+
+<!--dom selecionando
+  marca ou TagName = getElementsByTagName() consigo selecionarr mais de um objeto 
+  por id
+  por nome
+  por classe = getElementByClassName()
+  por seletor  = querySelector()
+                 querySelectorAll()-->
+
+ <!--QuerySelector = é um método mais recente-->                
