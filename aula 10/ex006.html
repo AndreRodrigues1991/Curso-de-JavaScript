@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style> /* 2 */
+        div#area {
+            font: normal 20pt Arial;
+            background-color: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px; /*mesma altura*/
+            text-align: center; /*para o Texto ficar no meio*/
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> <!-- 1 --> <!--Quando eu clicar em cima da DIV ele vai disparar o clicar--> <!-- pra usar o addEventListener() eu só uso o id="area"-->
+        Interaja...
+
+    </div>
+    
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {    
+            a.innerText = 'Clicou' //esse objeto vai mudar o conteudo dele pra clicou
+            a.style.backgroundColor = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+
+        }
+
+        function sair() {
+            a.innerText = 'Saiu'
+            a.style.backgroundColor = 'green'
+        }
+
+        //// Quando eu clicar na minha div eu vou criar um objeto chamado area e ele vai ser uma ligação do objeto area que está dentro do js com o elemento id area que esá dentro do HTML e esse objeto vai mudar o conteúdo dele pra clicou
+
+    </script>
+</body>
+</html>
+
+<!--Eventos Dom ? são coisas que eu posso fazer com algum elemento tipo mouseup  click  mouse 
+     <DIV>
+        -->
+        
+<!--O que é uma function em JavaScript? é um conjunto de códigos de linhas que vão ser executadas só quando o evento ocorrer  ex: function ação() {...}-->        
+
+<!--ação onmouseenter() - quando o mouse entrar-->
+
+<!--Aqui eu usei duas formas pra executar os eventos as  açoes pelo function que dispara os eventos pelo HTMLsó que fica muito poluído.. e o addEventListener() que é uma forma mais organizada mais limpa que dispara pelo JS-->
+
+<!--addEventListener() - ele vai ficar prestando atenção em um determinado evento-->
+
+<!--meu HTML fica limpinho e meu JavasCript vai tratar de ligar entre o html e o js vai ser feito pelas 3 linhas do addEventListerner()-->
+
+<!--Como descobrir algum erro ?? botão direito do mouse + inspecionar + -->
