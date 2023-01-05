@@ -7,7 +7,7 @@
     <title>Primeiros passos com DOM!</title>
     <style>
         body {
- hgygt           background-color: rgb(68, 125, 199);
+            background-color: rgb(68, 125, 199);
             color: white;
             font: normal 15pt Arial;
         }
@@ -17,45 +17,57 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
-    <div id="msg">Clique em mim</div> <!--pode ser por Name ou ID-->
+    <div id="msg">Clique em mim</div> <!--pode ser por Name ou ID   5  (parte)-->
     
     <script>
-        var corpo = window.document.body 
+        var corpo = window.document.body // 3 (parte)
 
-        var p1 = window.document.getElementsByTagName('p')[0] //primeiro parágrafo ´´e 0 o segundo é 1 etc 
+        var p1 = window.document.getElementsByTagName('p')[0] // 0 primeiro parágrafo   o segundo é 1 etc // 1 (parte)
 
-        var d = window.document.getElementById('msg') /*por id*/
+        var d = window.document.getElementById('msg') /*por id*/ // 5 (parte 1)
 
-        var d = window.document.querySelector('div#msg') /*peguei o ID pelo CSS # em html é ID*/
+        var d = window.document.querySelector('div#msg') /*peguei o ID pelo CSS # em html é ID*/ // 6 (parte)
 
-        window.document.write('Está escrito assim: ' + p1.innerText) //está me mostrando o texto que está dentro do meu primeiro parágrafo
+        window.document.write('Está escrito assim: ' + p1.innerText) //está me mostrando o texto que está dentro do meu primeiro parágrafo   1  (parte)
 
-        corpo.style.backgroundColor = 'green'
+        corpo.style.backgroundColor = 'green'  // 3 (parte)
 
-        p1.style.color = 'blue'
+        p1.style.color = 'blue'  // 2 (parte)
 
-        window.alert(p1.innerHTML) // vai mostrar a configuração do html 
+        window.alert(p1.innerHTML) // vai mostrar a configuração do html toda  innerText vai mostrar só o texto sem as configurações   4 (parte)
 
-        d.style.backgroundColor = 'red' //peguei o ID
+        d.style.backgroundColor = 'red' //peguei o ID // 5 (parte 2)
 
-        d.innerText = 'Modifiquei o texto atual por DOM em JS'
+        d.innerText = 'Modifiquei o texto atual por DOM em JS' // 5 (parte 3)
 
-        d.style.color = 'yellow'
+        d.style.color = 'yellow' // 6 (parte 1)
 
     </script>
 </body>
 </html>
 
-<!--DOM = Document Object Model = modelo de objetos para documentos = é um conjuntos de objetos dentro do seu navegador que vai dar acesso aos componentes internos do seu website-->
+<!--DOM = Document Object Model = modelo de objetos para documentos = é um conjuntos de objetos dentro do seu navegador que vai dar acesso aos componentes internos do seu gnf website-->
 
 <!--Arvore DOM-->
 
 <!--dom selecionando
-  marca ou TagName = getElementsByTagName() consigo selecionarr mais de um objeto 
-  por id
-  por nome
-  por classe = getElementByClassName()
+  marca ou TagName = getElementsByTagName() consigo selecionarr mais de um objeto. 
+  por id  getElementById
+  por nome  getElementsByName()[] quando eu tenho mais de 1 objeto eu tenho que usar o conchetes
+  por classe = getElementByClassName() por conjunto
   por seletor  = querySelector()
                  querySelectorAll()-->
 
  <!--QuerySelector = é um método mais recente-->                
+
+ <!-- Usar o live in server pra criar um miniservidor no navegador pra nao ter q ficar atualizando a pagina toda ves que fizer uma alteração... ctr + chift + p > live server-->
+
+ <!--         window      arvore DOM
+     location   document    history  sao elementos
+                 html    parent de head e body mas é chield de document
+        head              body    chield - filho de html   
+    Quem ta em baixo é chield quem ta em em cima de quem ta em baixo é parent pai oou parente-->
+
+    <!--Eu consigo fazer o acesso a todos os componentes usando o meu getElementByTagName eu tbm posso selecionar objetos quando meu site é um pouco mais evoluido eu nao preciso ficar selecionando 1 por 1 pelo 1 ID e usar o getElemtentById-->
+
+    <!-- -->
