@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Somando Números</title>
+    <style>
+        body { /*parte 12*/
+            font: normal 18pt Arial;
+        }
+
+        input { /*parte 13*/
+            font: normal 18pt Arial;
+            width: 100px;
+
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body>
+<body> <!--Eventos DOM-->
+    <h1>Somando Valores</h1>
+
+    <input type="number" name="txtn1" id="txtn1"> +
+
+    <input type="number" name="txtn2" id="txtn2"> <!--aqui eu nao precisaria do ID pq lá em baixo estou usando a segunda opção o querySelector()-->
+
+    <input type="button" value="Somar" onclick="somar()">
+
+    <div id="res">Resultado</div> <!--parte *7-->
     
+
+    <script>
+        function somar() { 
+            var tn1 = window.document.getElementById('txtn1') // var tn1 caixa de texto tn1 / jeito 1 parte 5
+
+            var tn2 = window.document.querySelector('input#txtn2') // jeito 2/  pequei o ID pelo CSS # em HTML é ID  querySelecor faz a seleção atráves do elemento CSS parte 6
+
+            var res = window.document.getElementById('res') // Criei uma variavel resultado  e to pegando a div resultado pelo ID* parte 7
+
+            var n1 = Number(tn1.value) // value que é o valor que está dentro da caixa de texto tn1 parte 8 // a variavel n1 recebe o valor do número da caixa de texto numero 1 
+
+            var n2 = Number(tn2.value) // agora eu tenho o valor de n1 e tbm o de n2 como forma de número pq se eu somar sem essa converção de numero ele ia concatenar parte 9
+
+            var s = n1 + n2 // criei uma variavel s que recebe o numero da caixa 1 + o numero da caixa parte 10
+
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>` // ${n1} um bloco um placehoder um lugar reservado pra um desígnio específico // OBS O res que está dentro do HTML recebe o numero do n1 + n2 e vai dizer o resultado pela variavel s que é o valor de n1 + n2 criada anteriormente.   esparte 11
+        }
+    </script>
 </body>
 </html>
+
