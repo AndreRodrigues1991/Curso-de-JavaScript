@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio dos Países</title>
+    <title>Desafio High dos Países</title>
 </head>
 <body>
     <h1>Desafio dos Países</h1>
-    <input type="search" name="txtpais" id="txtpais">
+    De que Páis você é? <input type="search" name="despais" id="despais">
+
+    <input type="button" value="Verificar" onclick="procurar()">
+
+    <div id="resultado">
+
+    </div>
+
     
+    
+    <script>
+        function procurar() {
+            var desp = window.document.querySelector('input#despais') // pra fazer a ligação do JS com essa caixa de texto
+
+            var resultado = window.document.querySelector('div#resultado') // div com ID resultado
+
+            var pais = 'EUA'
+            resultado.innerHTML == `<p>Você mora no Brasil? ${pais}</p>`
+
+            if (pais == EUA) {
+                resultado.innerHTML == '<p>Você não mora no Brasil'
+            }
+
+            resultado.innerHTML == 'Dirija sempre com cinto de segurança!'
+
+        }
+    </script>
 </body>
 </html>
