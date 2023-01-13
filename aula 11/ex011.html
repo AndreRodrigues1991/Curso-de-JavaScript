@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Desafio dos Países</h1>
-    De que Páis você é? <input type="search" name="despais" id="despais">
+    De que País você é? <input type="search" name="despais" id="despais">
 
     <input type="button" value="Verificar" onclick="procurar()">
 
@@ -25,10 +25,12 @@
             var resultado = window.document.querySelector('div#resultado') // div com ID resultado
 
             var pais = 'EUA'
-            resultado.innerHTML == `<p>Você mora no Brasil? ${pais}</p>`
+            resultado.innerHTML == `<p>Você mora nos EUA? ${pais}</p>`
 
-            if (pais == EUA) {
-                resultado.innerHTML == '<p>Você não mora no Brasil'
+            if (pais == Brasil) {
+                resultado.innerHTML == ('Você é Brasileiro')
+            } else {
+                resultado.innerHTML == ('Você é extrangeiro!')
             }
 
             resultado.innerHTML == 'Dirija sempre com cinto de segurança!'

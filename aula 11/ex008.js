@@ -4,7 +4,7 @@ console.log(`A velocidade do seu carro é ${vel}Km/h`) // sempre que eu usar o $
 
 if (vel > 60) { // Se a velocidade for maior do que 60 // parte 5
 
-        console.log('Você ultrapassou a velocidade permitida. MULTADO!') // esse só vai acontecer se a velocidade for maior que 60 // parte 3
+        console.log('Você ultrapassou a velocidade permitida. MULTADO!') // essa mensagem só vai aparecer se a velocidade for maior que 60 // parte 3
 }
 console.log('Dirija sempre usando cinto de segurança!') // parte 4
 
