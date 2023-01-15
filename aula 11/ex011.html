@@ -10,7 +10,7 @@
     <h1>Desafio dos Países</h1>
     De que País você é? <input type="search" name="despais" id="despais">
 
-    <input type="button" value="Verificar" onclick="procurar()">
+    <input type="button" value="verificar" onclick="procurar()">
 
     <div id="resultado">
 
@@ -22,19 +22,19 @@
         function procurar() {
             var desp = window.document.querySelector('input#despais') // pra fazer a ligação do JS com essa caixa de texto
 
-            var resultado = window.document.querySelector('div#resultado') // div com ID resultado
+            var resultado = document.querySelector('#resultado') // div com ID resultado
 
-            var pais = 'EUA'
-            resultado.innerHTML == `<p>Você mora nos EUA? ${pais}</p>`
+            var pais = document.querySelector("#despais").value.toLowerCase() // tanto maiusculo quanto minusculo
+            resultado.innerHTML = `<p>Você mora no ${pais}.</p>`
 
-            if (pais == Brasil) {
-                resultado.innerHTML == ('Você é Brasileiro')
+            if (pais == "brasil") {
+                resultado.innerHTML += ('Você é Brasileiro').toLowerCase() // acrescentar o texto no resultado vai adicionar
             } else {
-                resultado.innerHTML == ('Você é extrangeiro!')
+                resultado.innerHTML += ('Você é Extrangeiro!')
             }
-
-            resultado.innerHTML == 'Dirija sempre com cinto de segurança!'
-
+            resultado.innerHTML += '<p>Dirija sempre com cinto de segurança!</p>'
+            
+            
         }
     </script>
 </body>
