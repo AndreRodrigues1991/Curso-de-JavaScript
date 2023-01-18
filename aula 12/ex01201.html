@@ -10,5 +10,30 @@
     <h1>Desafio do Voto</h1>
     Você tem idade pro Voto Obrigatório? <input type="search" name="desvoto" id="desvoto">
     
+    <input type="button" value="Verificar" onclick="procurando()">
+
+    <div id="resultado"></div>
+    
+
+<script>
+    function procurando() {
+        var desv = window.document.querySelector('input#desvoto')
+
+        var resultado = window.document.querySelector('#resultado')
+
+        var idade = window.document.querySelector("#desvoto").value
+        resultado.innerHTML = `<p>Você tem ${idade} anos.</p>`
+        
+        if (idade < 16) {
+            resultado.innerHTML += ('Não Vota') 
+        } else if (idade < 18 || idade > 65) {
+            resultado.innerHTML += ('<p>Voto Opcional</p>')
+        } else {
+            resultado.innerHTML += ('Voto Obrigatório')
+        }
+
+        resultado.innerHTML += '<p>Tenha uma Boa Eleição! <strong>Arueeeeeeeiiii</strong>!</p>'
+    }
+</script>
 </body>
 </html>
