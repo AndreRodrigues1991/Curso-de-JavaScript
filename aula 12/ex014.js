@@ -1,4 +1,4 @@
-var agora = new Date()
+cbdvar agora = new Date()
 var diaSem = agora.getDay() /*Pra buscar o dia da semana*/
 /* 0 - Domingo
    1 - Segunda
