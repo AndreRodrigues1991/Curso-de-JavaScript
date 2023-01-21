@@ -8,4 +8,4 @@ if (idade < 16) {
  } else {
     console.log('voto obrigatório')
  }
- // Se a idade for menor que 16 nao vota se for menor que 16 ou se a idade for maior que 65 o voto é opcional e acima de 18 o voto é obrigatório > maior < menor
+ // Se a idade for menor que 16 nao vota se for menor que 18 ou se a idade for maior que 65 o voto é opcional e acima de 18 o voto é obrigatório > maior < menor
