@@ -10,7 +10,7 @@ function carregar() {
         // Bom Dia
         img.src = 'fotomanha.png'
         document.body.style.background = '#e2cd9f'
-
+f
     } else if (hora >= 12 && hora < 18) { //Se não se a hora for maior ou igual a 12 e a hora for menor que 18 é boa tarde
         //Boa Tarde
         img.src = 'fototarde.png'
