@@ -3,7 +3,7 @@ function verificar() {
     var ano = data.getFullYear() // fullyear pq va pegar 4 digitos da data
     var fano = document.getElementById('txtano') // ou essa
     var res = document.querySelector('div#res') // ou essa
-    if (fano.value.length == 0 || Number(fano.value) > ano) {
+    if (fano.value.length == 0 || (fano.value) > ano) {// se ele tiver vazio ou o ano atual
         window.alert('[ERRO] Verefique os dados e tente novamente!')
     } else {
         var fsex = document.getElementsByName('radsex')
