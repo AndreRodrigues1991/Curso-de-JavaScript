@@ -13,7 +13,7 @@ function tabuada() {
             tab.appendChild(item)
             c++ // tenho que incrementar o valor de c pra ele somar 
 
-        }cv
+        }
     }
 
 }
