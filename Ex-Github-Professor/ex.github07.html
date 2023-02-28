@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+
+        button {
+            height: 110px;
+            width: 180px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Média do aluno v1.0</h1>
+    <button onclick="Média()">Calcular Média</button>
+
+    <section id="Situação">
+        <p>O Resultado vai aparecer aqui...</p>
+    </section>
+    
+
+<script>
+    function Média() {
+        let nom = prompt('Qual é o nome do Aluno?')
+        let n1 = Number(prompt(`Qual foi a primeira nota de ${nom}`))
+        let n2 = Number(prompt(`Além de ${n1}, Qual foi a outra nota de ${nom}`))
+        med = (n1 + n2)/2 //  Se você não colocar os parênteses para forçar a precedência, seu cálculo vai dar um resultado errado, já que a divisão será feita antes.
+
+        let res = document.getElementById('Situação')
+        res.innerHTML = `<p>Calculando a média final de <Mark>${nom}</Mark></p>`
+        res.innerHTML += `<p>As notas obtidas foram <Mark>${n1}</Mark> e <Mark>${n2}</Mark></p>`
+        res.innerHTML += `<p>A média final será <Mark>${med}</Mark></p>`
+
+        
+    }
+</script>
+</body>
+</html>
+
+<!--let nom = prompt('Qual é o nome do Aluno?') === Já que o nome não é um número e sim letras, não é preciso colocar Number() para fazer a covnersão-->
