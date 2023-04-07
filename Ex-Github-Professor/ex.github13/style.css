@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    font: 12pt Arial;
+}
+
+h1 {
+    font-family: 'pacifico', cursive;
+}
+
+button {
+    height: 100px;
+    width: 190px;
+    font-size: 12pt;
+    font-weight: bold;
+    
+}
