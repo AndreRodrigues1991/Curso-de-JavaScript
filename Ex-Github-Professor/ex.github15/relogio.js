@@ -12,9 +12,9 @@ function info() {
     let seg = agora.getSeconds()
 
     saida.innerHTML = `<p>Dia: <mark>${dia}</mark></p>`
-    saida.innerHTML += `<p>Mes: <mark>${meses}</mark></p>`
+    saida.innerHTML += `<p>Mes: <mark>${meses[mes]}</mark></p>`
     saida.innerHTML += `<p>Ano: <mark>${ano}</mark></p>`
-    saida.innerHTML += `<p>Dia da Semana: <mark>${semana}</mark></p>`
+    saida.innerHTML += `<p>Dia da Semana: <mark>${semana[sem]}</mark></p>`
     saida.innerHTML += `<p>Hora: <mark>${hora}</mark> </p>`
     saida.innerHTML += `<p>Minutos: <mark>${min}</mark></p>`
     saida.innerHTML += `<p>Segundos: <mark>${seg}</mark></p>`
