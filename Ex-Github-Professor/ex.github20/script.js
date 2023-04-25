@@ -1,5 +1,5 @@
 function EstaçãoDoAno() { // Sim é possivel usar acentuação!
-    let mes = prompt('Digite o mês em extenso (ex: Setembro)')
+    let mes = prompt('Digite o mês em extenso (ex: Setembro)') 
     let saida = document.querySelector('section.saida')
     let Estação
     switch (mes.toUpperCase()) { // O método toUpperCase() transforma todas as letras de uma string para maiúsculas
@@ -25,7 +25,7 @@ function EstaçãoDoAno() { // Sim é possivel usar acentuação!
     }
     function NumeroDoAno() {
         let Num = Number(prompt('Digite o Numero do mês'))
-        let resultado = document.querySelector('section.resposta')
+        let diga = document.getElementById('resposta')
         let Numeral
         switch (Num.toUpperCase()) {
             case '1': case 'FEVEREIRO': case 'MARÇO': // Podemos testar múltiplos casos em uma mesma linha, desse jeito
@@ -43,8 +43,9 @@ function EstaçãoDoAno() { // Sim é possivel usar acentuação!
         default:
             Numeral = 'INDEFINIDA'
             break
+            
         }
-        resposta.innerHTML = `<p>No mês de <mark>${Num}</mark>, estamos na estação <mark><strong>${Numeral}</strong></mark>.</p>`
+        diga.innerHTML = `<p>No mês de <mark>${Num}</mark>, estamos na estação <mark><strong>${Numeral}</strong></mark>.</p>`
     }
     
 
