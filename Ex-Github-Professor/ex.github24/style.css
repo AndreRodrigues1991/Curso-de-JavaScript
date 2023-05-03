@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    font: 12pt Arial;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 140px;
+    width: 200px;
+    border-radius: 10px;
+}
