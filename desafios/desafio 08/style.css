@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+}
+
+button {
+    height: 140px;
+    width: 160px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 15px;
+}
