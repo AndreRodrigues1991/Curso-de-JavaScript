@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 19px;
+}
+
+button {
+    height: 120px;
+    width: 170px;
+    font-size: 22px;
+    border-radius: 10px;
+}
