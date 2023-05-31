@@ -7,7 +7,7 @@ btn.addEventListener('click', berco, false) // aqui estou fazendo um evento mas 
 function berco() {
     let valor = Number(prompt('Quantos R$ Você tem na carteira?'))
 
-    let atual = valor / cotacao
+    let atual = valor * cotacao 
 
     resultado.innerHTML = `Você tem R$${valor} que connvertido em dolar dará US$${atual}.`
 }
