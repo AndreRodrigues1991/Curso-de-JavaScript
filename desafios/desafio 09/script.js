@@ -12,7 +12,7 @@ function reajuste() {
     let total = (Number(preco) + Number(aumento))
 
     resultado.innerHTML = `
-    <h2>${funcionario} recebeu um aumento salarial.</h2>
+    <h2>${funcionario} recebeu um aumento salarial!</h2>
     <p>O salário atual era R$ ${preco}.</p>
     <p>Com um aumento de ${porcentagem}%, o salário vai aumentar R$ ${aumento} no próximo mês.</p>
     <p>E a partir daí, ${funcionario} vai passar a ganhar R$ ${total}.</p>
