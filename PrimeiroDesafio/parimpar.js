@@ -1,9 +1,9 @@
 function teste() {
-    /*let min = 1
+    let min = 1
     let max = 10
-    let aleatorio = math.random()*/
+    /*let aleatorio = math.random()*/
     let num = Number(prompt('digite um número:'))
-    let tipo
+    let tipo 
     if (num % 2 == 0) {
         tipo = '<strong>PAR</strong>'
     } else {
